@@ -1,0 +1,184 @@
+:root {
+    --main-font: 'Red Hat Mono', monospace;
+    --main-font-size: 20px;
+    --main-font-colour: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+.box {
+    height: 100vh;
+    width: 50%;
+}
+
+#left-side {
+    background-color: white;
+    float: left;
+}
+#right-side {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(177,145,158,1) 0%, rgba(254,242,255,1) 100%);
+    float: right;
+}
+
+
+/* img */
+img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+main {
+    margin: 10% auto;
+    width: 300px;
+    height: 370px;
+    box-shadow: 2px 2px 8px #a9a9a9;
+    transform: translate(0%, 0%);
+
+}
+
+button {
+    padding: 1rem;
+    background-color: aliceblue;
+    border-style: hidden;
+    border-radius: 25px;
+    font-family: var(--main-font);
+    color: var(--main-font-colour);
+}
+
+button:hover {
+    background-color: rgba(131, 203, 208, 0.99);
+}
+
+#icon {
+    height: 35px;
+}
+aside {
+    margin: auto;
+    width: 50%;
+}
+h3 {
+    text-align: center;
+    font-family: 'Noticia Text', serif
+}
+#media-sharing-app {
+    font-size: 2em;
+}
+
+
+ol {
+    padding: 50px 0px 0px 0px;
+    width: 300px;
+    margin: 8px auto;
+}
+li {
+    padding: 8px;
+}
+
+
+figcaption {
+    margin: 5px 0px 0px 6px;
+    color: red;
+    font-size: 1em;
+}
+input {
+    font-family: var(--main-font);
+    padding: 0.7rem;
+    border-radius: 7px;
+    border-style: none;
+}
+
+#nappula {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 54px;
+    background-color: transparent;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    #nappula {
+        position: relative;
+        bottom: -14px;
+    }
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    ol {
+        position: relative;
+        right: 50px;
+    }
+}
+@media screen and (max-width: 915px) {
+    ol {
+        position: relative;
+        bottom: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    ol {
+        position: relative;
+        right: 50px;
+
+    }
+}
+@media screen and (max-width: 700px) {
+    #left-side {
+        float: none;
+        width: 100%;
+    }
+
+    #right-side {
+        float: none;
+        width: 100%;
+    }
+
+    img {
+        width: 400px;
+    }
+    main {
+        width: 400px;
+        height: 470px;
+    }
+
+
+    figcaption {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 330px){
+    ol {
+        position: relative;
+        right: 50px;
+        bottom: 10px;
+    }
+    #nappula {
+        position: relative;
+        top: 35px;
+    }
+    h3 {
+        font-size: 1em;
+        position: relative;
+        top: 10px;
+    }
+}
+
