@@ -29,7 +29,6 @@ body {
     float: right;
 }
 
-
 /* img */
 img {
     display: block;
@@ -58,6 +57,10 @@ button {
 button:hover {
     background-color: rgba(131, 203, 208, 0.99);
 }
+button:active {
+    background-color: #265365;
+}
+
 
 #icon {
     height: 35px;
@@ -107,7 +110,6 @@ input {
 
 }
 
-
 @media screen and (max-width: 1000px) {
     #nappula {
         position: relative;
@@ -129,7 +131,6 @@ input {
     }
 
 }
-
 
 
 @media screen and (max-width: 400px) {
